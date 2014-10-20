@@ -5,8 +5,8 @@
       <label>Aschroder Extensions</label>
       <sort_order>600</sort_order>
       <show_in_default>1</show_in_default>
-      <show_in_website>0</show_in_website>
-      <show_in_store>0</show_in_store>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
     </aschroder>
   </tabs>
   <sections>
@@ -17,8 +17,8 @@
       <frontend_type>text</frontend_type>
       <sort_order>110</sort_order>
       <show_in_default>1</show_in_default>
-      <show_in_website>0</show_in_website>
-      <show_in_store>0</show_in_store>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
       <groups>
         <general module="smtppro" translate="label comment">
           <label>General Settings</label>
@@ -26,7 +26,7 @@
           <sort_order>10</sort_order>
           <show_in_default>1</show_in_default>
           <show_in_website>1</show_in_website>
-          <show_in_store>0</show_in_store>
+          <show_in_store>1</show_in_store>
           <comment><![CDATA[<div style='background-color: #efefef;margin-bottom: 10px;height: 40px;'> <img style='float:left;width: 150px;' src='http://www.aschroder.com/smtppro-logo.png' /> <span style='float:left;font-size: 20px; margin:10px;'>SMTP Pro Email Extension</span> </div> Configure your SMTP connection below. If you have any questions or would like any help please visit <a href='http://magesmtppro.com' target='_blank'>magesmtppro.com</a>.]]></comment>
           <fields>
             <option translate="label">
@@ -35,8 +35,8 @@
               <source_model>smtppro/system_config_source_smtp_option</source_model>
               <sort_order>10</sort_order>
               <show_in_default>1</show_in_default>
-              <show_in_website>0</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
             </option>
 
 
@@ -47,7 +47,7 @@
               <sort_order>20</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>google</option></depends>
             </googleapps_email>
             <googleapps_gpassword translate="label comment">
@@ -58,7 +58,7 @@
               <sort_order>23</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>google</option></depends>
             </googleapps_gpassword>
 
@@ -68,7 +68,7 @@
                   <sort_order>20</sort_order>
                   <show_in_default>1</show_in_default>
                   <show_in_website>1</show_in_website>
-                  <show_in_store>0</show_in_store>
+                  <show_in_store>1</show_in_store>
                   <depends><option>sendgrid</option></depends>
               </sendgrid_email>
               <sendgrid_password translate="label comment">
@@ -79,7 +79,7 @@
                   <sort_order>23</sort_order>
                   <show_in_default>1</show_in_default>
                   <show_in_website>1</show_in_website>
-                  <show_in_store>0</show_in_store>
+                  <show_in_store>1</show_in_store>
                   <depends><option>sendgrid</option></depends>
               </sendgrid_password>
 
@@ -91,7 +91,7 @@
               <sort_order>20</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>ses</option></depends>
             </ses_access_key>
             <ses_private_key translate="label comment">
@@ -102,7 +102,7 @@
               <sort_order>23</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>ses</option></depends>
             </ses_private_key>
 
@@ -113,7 +113,7 @@
               <sort_order>20</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>smtp</option></depends>
             </smtp_authentication>
             <smtp_username translate="label">
@@ -122,7 +122,7 @@
               <sort_order>23</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>smtp</option><smtp_authentication separator=",">login,plain,crammd5</smtp_authentication></depends>
             </smtp_username>
             <smtp_password translate="label">
@@ -132,7 +132,7 @@
               <sort_order>26</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>smtp</option><smtp_authentication separator=",">login,plain,crammd5</smtp_authentication></depends>
             </smtp_password>
             <smtp_host translate="label">
@@ -141,7 +141,7 @@
               <sort_order>29</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>smtp</option></depends>
             </smtp_host>
             <smtp_port translate="label">
@@ -150,7 +150,7 @@
               <sort_order>32</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>smtp</option></depends>
             </smtp_port>
             <smtp_ssl translate="label comment">
@@ -161,10 +161,10 @@
               <sort_order>35</sort_order>
               <show_in_default>1</show_in_default>
               <show_in_website>1</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_store>1</show_in_store>
               <depends><option>smtp</option></depends>
             </smtp_ssl>
-            
+
           </fields>
         </general>
 
@@ -174,7 +174,7 @@
           <sort_order>50</sort_order>
           <show_in_default>1</show_in_default>
           <show_in_website>1</show_in_website>
-          <show_in_store>0</show_in_store>
+          <show_in_store>1</show_in_store>
           <comment>Please only use these settings if you are a software developer or server admin.</comment>
           <fields>
             <logenabled translate="label comment">
@@ -184,8 +184,8 @@
               <source_model>adminhtml/system_config_source_yesno</source_model>
               <sort_order>40</sort_order>
               <show_in_default>1</show_in_default>
-              <show_in_website>0</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
             </logenabled>
             <cleanlog translate="label comment">
               <label>Clean Email Logs</label>
@@ -194,8 +194,8 @@
               <source_model>adminhtml/system_config_source_yesno</source_model>
               <sort_order>50</sort_order>
               <show_in_default>1</show_in_default>
-              <show_in_website>0</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
               <depends><logenabled>1</logenabled></depends>
             </cleanlog>
             <cleanlog_after_days translate="label">
@@ -203,8 +203,8 @@
               <frontend_type>text</frontend_type>
               <sort_order>60</sort_order>
               <show_in_default>1</show_in_default>
-              <show_in_website>0</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
               <depends><cleanlog>1</cleanlog><logenabled>1</logenabled></depends>
             </cleanlog_after_days>
             <log_debug translate="label">
@@ -214,8 +214,8 @@
               <source_model>adminhtml/system_config_source_yesno</source_model>
               <sort_order>70</sort_order>
               <show_in_default>1</show_in_default>
-              <show_in_website>0</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
             </log_debug>
             <test translate="label comment">
               <comment>Save settings before running this test.</comment>
@@ -223,8 +223,8 @@
               <frontend_model>Aschroder_SMTPPro_Block_Adminhtml_Test</frontend_model>
               <sort_order>80</sort_order>
               <show_in_default>1</show_in_default>
-              <show_in_website>0</show_in_website>
-              <show_in_store>0</show_in_store>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
             </test>
           </fields>
         </debug>
