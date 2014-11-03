@@ -73,6 +73,7 @@ class Aschroder_SMTPPro_Smtp_TestController extends Mage_Adminhtml_Controller_Ac
         // Hosts often block SMTP outbound connections, so we check for that here
 
         $transport = $_helper->getTransport($websiteModel->getId());
+        $_helper->log($_helper->__("website id is: %s", $websiteModel->getId()));
 
         if (is_subclass_of($transport, 'Aschroder_SMTPPro_Model_Transports_Basesmtp')) {
             $_helper->log($_helper->__("Raw connection test for SMTP options."));
@@ -129,7 +130,9 @@ class Aschroder_SMTPPro_Smtp_TestController extends Mage_Adminhtml_Controller_Ac
                 'transport' => $transport
             ));
 
-            $emailTransport = $transport->getTransport();
+            /* $emailTransport = $transport->getTransport(); */
+            //test in admin ,don't need observer
+            $emailTransport = $_helper->getTransport($websiteModel->getId());
 
             if (!empty($emailTransport)) {
 

@@ -140,7 +140,7 @@ class App_Mail_Transport_AmazonSES extends Zend_Mail_Transport_Abstract
 
     /**
      * Returns header string containing encoded authentication key
-     * 
+     *
      * @param   date $date
      * @return  string
      */

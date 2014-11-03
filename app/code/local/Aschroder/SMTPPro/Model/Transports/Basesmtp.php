@@ -24,6 +24,8 @@ class Aschroder_SMTPPro_Model_Transports_Basesmtp {
         $ssl = $this->getSsl($storeId);
 
         $_helper->log("Using $name Transport.");
+        $_helper->log("Using $email UserName.");
+        $_helper->log("Using $auth auth.");
 
         $config = array();
 

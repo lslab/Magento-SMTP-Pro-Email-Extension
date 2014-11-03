@@ -44,7 +44,8 @@ class Aschroder_SMTPPro_Model_Observer extends Varien_Object {
      */
     public function beforeSend($observer) {
         Mage::helper('smtppro')->log($observer->getEvent()->getMail());
-        $observer->getEvent()->getTransport()->setTransport(Mage::helper('smtppro')->getTransport());
+        /* $observer->getEvent()->getTransport()->setTransport(Mage::helper('smtppro')->getTransport()); */
+        $observer->getEvent()->getTransport()->setTransport(Mage::helper('smtppro')->getTransport(Mage::app()->getStore()->getId()));
     }
 
     /**
@@ -58,7 +59,8 @@ class Aschroder_SMTPPro_Model_Observer extends Varien_Object {
      */
     public function beforeSendTemplate($observer) {
         Mage::helper('smtppro')->log($observer->getEvent()->getMail());
-        $observer->getEvent()->getTransport()->setTransport(Mage::helper('smtppro')->getTransport());
+        /* $observer->getEvent()->getTransport()->setTransport(Mage::helper('smtppro')->getTransport()); */
+        $observer->getEvent()->getTransport()->setTransport(Mage::helper('smtppro')->getTransport(Mage::app()->getStore()->getId()));
     }
-	
+
 }
